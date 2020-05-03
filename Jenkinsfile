@@ -1,6 +1,6 @@
 node{
    stage('SCM Checkout'){
-     git 'https://github.com/raghuk134/my-app'
+     git 'https://github.com/madhu0723/my-application01'
       
    }
    stage('Build'){
@@ -10,9 +10,14 @@ node{
    
    stage('email-notificaiton'){
       
-      mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: 'jenskins build status ', to: 'madhumatt02@gmail.com'
-      
-      
+      mail bcc: '', body: '''Hi Team, 
+
+      Thanks for Mail notifications.
+
+      Regards,
+
+      Madhusudhan M.''', 
+      cc: 'madhum.java@gmail.com', from: '', replyTo: '', subject: 'My Notification Testing', to: 'madhumatt02@gmail.com'
       
    }
    
