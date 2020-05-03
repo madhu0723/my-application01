@@ -10,7 +10,7 @@ node{
    
    stage('email-notificaiton'){
       
-      mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: 'jenskins build status ', to: 'k.r.rao@outlook.com'
+      mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: 'jenskins build status ', to: 'madhumatt02@gmail.com'
       
       
       
